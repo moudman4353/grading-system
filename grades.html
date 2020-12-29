@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>my results</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+
+<form id="check">	
+		<h2 style="color: #808000">RESULTS CHECKER</h2>
+		
+
+		<input id="result" type="number"results placeholder="Enter your results" required> <br><br>
+
+
+
+   <input type="submit" value="get grade">
+
+    <div id="grade"></div>
+
+<form>
+
+	<script type="text/javascript">
+
+		document.getElementById('check').addEventListener('submit', function(event){
+			event.preventDefault()
+
+
+
+
+
+ var result = document.getElementById('result').value
+//console.log(result)
+
+if (result < 39) {
+
+	document.getElementById('grade').innerHTML = 'fail'}
+
+	else if ( result < 49){document.getElementById('grade').innerHTML = 'Pass'}
+
+	else if ( result < 59){document.getElementById('grade').innerHTML = 'Credit'}
+
+
+else if ( result < 69){document.getElementById('grade').innerHTML = 'Credit'}
+
+
+else if ( result < 79){document.getElementById('grade').innerHTML = 'Good'}
+
+
+else if ( result < 89){document.getElementById('grade').innerHTML = 'Very good'}
+
+
+	else if ( result < 100){document.getElementById('grade').innerHTML = 'Excellent'}
+
+
+
+
+
+
+
+
+		}  )
+		
+
+	
+
+</script>
+
+
+</body>
+</html>
